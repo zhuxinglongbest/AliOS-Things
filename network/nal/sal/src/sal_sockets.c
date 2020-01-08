@@ -1649,6 +1649,13 @@ int sal_device_init()
 	return -1;
    }
 #endif
+#ifdef DEV_SAL_M5310A
+   if(m5310a_sal_device_init() != 0)
+   {
+        SAL_ERROR("m5310a sal init failed\n");
+	return -1;
+   }
+#endif
 #ifdef DEV_SAL_SIM800
    if(sim800_sal_device_init() != 0)
    {

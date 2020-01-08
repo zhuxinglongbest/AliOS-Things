@@ -1,0 +1,17 @@
+config AOS_SAL_NBIOT
+    bool "NBIOT"
+
+if AOS_SAL_NBIOT
+
+choice
+    prompt "Device"
+    default AOS_COMP_DEVICE_SAL_M5310A if BSP_EXTERNAL_NBIOT_MODULE = "nbiot.m5310a"
+
+config AOS_NBIOT_NULL
+    bool "Null"
+
+source "drivers/sal/nbiot/m5310a/Config.in"
+
+endchoice
+
+endif

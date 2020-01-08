@@ -27,4 +27,6 @@ else ifeq (wifi.esp8266,$(module))
 $(NAME)_COMPONENTS += device_sal_esp8266
 else ifeq (wifi.athost,$(module))
 $(NAME)_COMPONENTS += device_sal_athost
+else ifeq (nbiot.m5310a,$(module))
+$(NAME)_COMPONENTS += device_sal_m5310a
 endif

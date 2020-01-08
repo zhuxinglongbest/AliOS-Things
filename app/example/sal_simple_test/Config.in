@@ -1,0 +1,8 @@
+config AOS_APP_SAL_SIMPLE_TEST
+    bool "sal simple test"
+    select AOS_COMP_YLOOP
+    help
+
+if AOS_APP_SAL_SIMPLE_TEST
+# Configurations for sal simple test
+endif

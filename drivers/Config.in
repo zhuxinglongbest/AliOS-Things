@@ -6,9 +6,11 @@ if AOS_COMP_SAL
 choice
     prompt "SAL Drivers Configuration"
     default AOS_SAL_WIFI if BSP_EXTERNAL_WIFI_MODULE != ""
+    default AOS_SAL_NBIOT if BSP_EXTERNAL_NBIOT_MODULE != ""
 
     source "drivers/sal/gprs/Config.in"
     source "drivers/sal/wifi/Config.in"
+    source "drivers/sal/nbiot/Config.in"
 endchoice
 endif
 

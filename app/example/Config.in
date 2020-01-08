@@ -252,5 +252,11 @@ if AOS_APP_UAPP2
         default "uapp2"
 endif
 
+source "app/example/sal_simple_test/Config.in"
+if AOS_APP_SAL_SIMPLE_TEST
+    config AOS_BUILD_APP
+        default "sal_simple_test"
+endif
+
 endchoice
 endif
