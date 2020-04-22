@@ -945,7 +945,7 @@ int32_t uart_flow_control_transform(hal_uart_flow_control_t flow_control_hal,
     {
         flow_control = UART_HWCONTROL_RTS;
     }
-    else if(flow_control_hal == FLOW_CONTROL_RTS)
+    else if(flow_control_hal == FLOW_CONTROL_CTS_RTS)
     {
         flow_control = UART_HWCONTROL_RTS_CTS;
     }
