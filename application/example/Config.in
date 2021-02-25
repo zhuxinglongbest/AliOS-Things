@@ -17,10 +17,28 @@ if AOS_APP_HELLOWORLD_DEMO
         default "helloworld_demo"
 endif
 
+source "application/example/uvoice_demo/Config.in"
+if AOS_APP_UVOICE_DEMO
+    config AOS_BUILD_APP
+        default "uvoice_demo"
+endif
+
 source "application/example/game_demo/Config.in"
 if AOS_APP_GAME_DEMO
     config AOS_BUILD_APP
         default "game_demo"
+endif
+
+source "application/example/wificamera_demo/Config.in"
+if AOS_APP_WIFICAMERA_DEMO
+    config AOS_BUILD_APP
+        default "wificamera_demo"
+endif
+
+source "application/example/ucloud_ai_demo/Config.in"
+if AOS_APP_UCLOUD_AI_DEMO
+    config AOS_BUILD_APP
+        default "ucloud_ai_demo"
 endif
 
 source "application/example/micropython_repl_demo/Config.in"
@@ -59,6 +77,12 @@ if AOS_APP_HAL_DEMO
         default "hal_demo"
 endif
 
+source "application/example/edu_demo/Config.in"
+if AOS_APP_EDU_DEMO
+    config AOS_BUILD_APP
+        default "edu_demo"
+endif
+
 source "application/example/lora_demo/Config.in"
 if AOS_APP_LORA_DEMO
     config AOS_BUILD_APP
@@ -75,6 +99,12 @@ source "application/example/linkkit_demo/Config.in"
 if AOS_APP_LINKKIT_DEMO
     config AOS_BUILD_APP
         default "linkkit_demo"
+endif
+
+source "application/example/audio_demo/Config.in"
+if AOS_APP_AUDIO_DEMO
+	config AOS_BUILD_APP
+	default "audio_demo"
 endif
 
 source "application/example/coap_demo/Config.in"
